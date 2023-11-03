@@ -1,0 +1,215 @@
+@import '../../missins.scss';
+@import url("https://fonts.googleapis.com/css?family=Poppins:300,400,500,700i&display=swap");
+
+
+nav{
+    .nav{
+        display: flex;
+        justify-content: space-between;
+        padding: 1.1rem 9rem;
+        @include md {
+            padding: 1.3rem 2rem;   
+        }
+        .icons{
+            display: none;
+       }
+        .name{
+            h1{
+                font-family: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            }
+        }
+    
+        .information{
+            display: flex;
+            text-align: center;
+            gap: 3rem;
+            font-size: 1.2rem;
+            font-family: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            .link{
+                text-decoration: none;
+                color: #000;
+           }
+           
+           .close{
+             display: none;
+           }
+            
+            .title{
+                cursor: pointer;
+                @include lg {
+                    display: none;
+                    padding: 5rem 19rem;
+                }
+            }
+            
+            
+        }
+        .links{
+            overflow: hidden;
+
+           @include lg {
+                position: absolute;
+                overflow: hidden;
+                left: 0;
+                top: 0;
+                width: 180px;
+                padding: 3rem;
+                height: 100vh;
+                background: #ffffff;
+                display: flex;
+                box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+                flex-direction: column;
+                z-index: 999999;
+                transition: .3s;
+                animation:mobile 0.3s ease forwards;
+           }
+           .icons{
+                @include lg {
+                    display: none;
+                }
+           }
+
+           .close{
+                position: absolute;
+                font-size: 1.8rem;
+                top: 5px;
+                right: 3px;
+                cursor: pointer;
+                display: none;
+
+                @include lg {
+                    display: block;
+                }
+           };
+
+           a{
+                color: #000;
+                text-decoration: none;
+                line-height: 10px;
+                font-family: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+           }
+          
+        }
+        .icons{
+            padding: 1rem 1rem;
+            cursor: pointer;
+            border: 1px solid #000;
+            border-radius: 100%;
+            background-color: #000000dc;
+            color: #fff;
+            font-size: 1.4rem;
+            @include lg {
+                display: block;
+                position: relative;
+                top: .4rem;
+            }
+            @include lg {
+                display: block;
+            }
+        } 
+    }
+    
+    .descripction{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 2rem;
+        gap: 7rem;
+        @include md {
+            flex-direction: column;
+            position: relative;
+            top: 3rem;
+            padding: 0rem;
+        }
+        @include lg {
+            flex-direction: column;
+            position: relative;
+            top: 3rem;
+            padding: 0rem;
+        }
+       
+
+        .heaer_img{
+            position: relative;
+            top: -2rem;
+            width: 18rem;
+            height: 22rem;
+            @include lg {
+                width: 19rem;
+                height: 19rem;
+            }
+        }
+
+        .more_information{
+            text-align: center;
+            line-height: 1.2rem;
+
+            @include md {
+                margin: -5rem;     
+            }
+            @include lg {
+                padding: -5rem -4rem;
+            }
+           
+
+            p{
+                font-size: 1.1rem;
+                font-family: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+            }
+
+            h1{
+                font-size: 1.9rem;
+                font-family: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            }
+            .title_h3{
+                font-size: 1.7rem;
+                color: #000000c1;
+                font-family: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+            }
+            // @include lg {
+            //  padding: 2rem 2rem;
+            // }
+
+            .socials{
+                .icon{
+                    padding-top: 20px;
+                    margin: 5px;
+                    font-size: 1.8rem;
+                }
+                a{
+                    color: #000;
+                }
+            }
+        }
+        .button{
+            padding: 1rem;
+            .button1{
+                border: 1.5px solid #000;
+                padding: 1rem 2.5rem;
+                background-color: #fff;
+                border-radius: 50px;
+                cursor: pointer;
+                text-decoration: none;
+                color: #000;
+                font-family: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+                
+            }
+            .button2{
+                padding: 1rem 2.5rem;
+                background-color: #000000dc;
+                color: #fff;
+                border: none;
+                cursor: pointer;
+                border-radius: 50px;
+                margin: .7rem;
+                text-decoration: none;
+                font-family: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+            }
+        }
+    }
+
+}
